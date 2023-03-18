@@ -1,0 +1,23 @@
+
+.block {
+    background-color: white;
+    border-radius: 25px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.output-text-kzt, .output-text-usd, .output-text-eur {
+    width: 150px;
+    background-color: lightgray;
+}
+
+input{
+    border: 1px solid #DBDBDB;
+    padding: 10px;
+}
+
+select{
+    padding: 9px;
+    border: 1px solid #DBDBBD;
+}

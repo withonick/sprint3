@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main">
+    <div  class="block">
+        <div>
+            <table>
+                <tr>
+                    <td><h4>Введите сумму:</h4></td>
+                    <td></td>
+                    <td><h4>KZT (Tenge)</h4></td>
+                    <td><h4>USD (Dollar)</h4></td>
+                    <td><h4>EUR (Euro)</h4></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="amount" oninput="calculate(this.value)" style="padding-top: 5px;margin-bottom: 4px;">
+                        <select id="blmim" onchange="calculate(document.getElementById('amount').value)" style="padding-top: 5px;">
+                            <option value="KZT">KZT</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </td>
+                    <td></td>
+                    <td class="output-text-kzt" id="output-kzt">-</td>
+                    <td class="output-text-usd" id="output-usd">-</td>
+                    <td class="output-text-eur" id="output-eur">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
